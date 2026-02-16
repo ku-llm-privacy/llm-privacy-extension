@@ -1,0 +1,23 @@
+name: Task
+description: Create a task/bug/feature/research item for the project
+title: "[Task]: "
+labels: ["task"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: What are we doing and why?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria (done means…)
+      description: Use a checklist
+      value: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
